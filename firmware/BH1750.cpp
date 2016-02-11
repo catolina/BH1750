@@ -36,7 +36,7 @@ void BH1750::configure(uint8_t mode) {
         case BH1750_ONE_TIME_HIGH_RES_MODE_2:
         case BH1750_ONE_TIME_LOW_RES_MODE:
             // apply a valid mode change
-            Wire.beginTransmission(BH1750LIB_I2CADDR);
+            Wire.beginTransmission(BH1750_I2CADDR);
             Wire.write(mode);
             Wire.endTransmission();
             delayMicroseconds(10);
