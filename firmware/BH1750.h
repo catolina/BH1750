@@ -28,7 +28,7 @@ Written by Christopher Laws, March, 2013.
   // see bellow
 #endif
 
-#include "Wire.h"
+//#include "Wire.h"
 
 #define BH1750_DEBUG 0
 
