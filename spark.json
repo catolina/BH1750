@@ -2,7 +2,7 @@
   "name": "BH1750",
   "author": "Christopher Laws",
   "version": "1.0.0",
-  "keywords": "BMP180, barometric, pressure, atmospheric, sensor, i2c",
+  "keywords": "BH1750, light, digital sensor, i2c",
   "description": "This is a library for the BH1750FVI Digital Light Sensor
 breakout board.
 
