@@ -12,7 +12,7 @@ Written by Christopher Laws, March, 2013.
 */
 
 #include "BH1750.h"
-#include <util/delay.h>
+//#include <util/delay.h>
 
 
 BH1750::BH1750() {
