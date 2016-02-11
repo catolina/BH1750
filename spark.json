@@ -3,11 +3,7 @@
   "author": "Christopher Laws",
   "version": "1.0.0",
   "keywords": "BH1750, light, digital sensor, i2c",
-  "description": "This is a library for the BH1750FVI Digital Light Sensor
-breakout board.
-
-The board uses I2C for communication. 2 pins are required to
-interface to the device.",
+  "description": "This is a library for the BH1750FVI Digital Light Sensor breakout board. The board uses I2C for communication. 2 pins are required to interface to the device.",
   "repository":
   {
     "type": "git",
