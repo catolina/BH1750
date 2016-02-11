@@ -18,13 +18,6 @@ Written by Christopher Laws, March, 2013.
 BH1750::BH1750() {
 }
 
-BH1750::BH1750(uint8_t mode) {
-
-  Wire.begin();
-  //write8(mode);
-  configure(mode);
-}
-
 void BH1750::begin(uint8_t mode) {
 
   Wire.begin();
@@ -43,10 +36,8 @@ void BH1750::configure(uint8_t mode) {
         case BH1750_ONE_TIME_HIGH_RES_MODE_2:
         case BH1750_ONE_TIME_LOW_RES_MODE:
             // apply a valid mode change
-           Wire.beginTransmission(BH1750LIB_I2CADDR);
-            Wire.write(mode);
-            Wire.endTransmission();
-            delayMicroseconds(10);
+            write8(mode);
+           // delayMicroseconds(10);
             break;
         default:
             // Invalid measurement mode
