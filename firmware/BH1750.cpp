@@ -39,7 +39,7 @@ void BH1750::configure(uint8_t mode) {
             Wire.beginTransmission(BH1750_I2CADDR);
             Wire.write(mode);
             Wire.endTransmission();
-            delayMicroseconds(10);
+            delay(10);
             break;
         default:
             // Invalid measurement mode
@@ -57,11 +57,10 @@ uint16_t BH1750::readLightLevel(void) {
 
   Wire.beginTransmission(BH1750_I2CADDR);
   Wire.requestFrom(BH1750_I2CADDR, 2);
-#if (ARDUINO >= 100)
+
   level = Wire.read();
   level <<= 8;
   level |= Wire.read();
-#endif
   Wire.endTransmission();
 
 #if BH1750_DEBUG == 1
